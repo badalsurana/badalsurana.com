@@ -1,0 +1,41 @@
+# Build settings
+permalink: /blog/:year/:title/
+markdown: kramdown
+highlighter: pygments
+plugins: [jekyll-paginate]
+
+paginate: 3
+paginate_path: "/blog/page/:num/"
+comments: true
+
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: compressed # expanded
+
+# SEO settings
+title: "Badal Surana"
+description: "Badal Surana"
+keywords: "Badal Surana"
+url: http://www.badalsurana.com
+
+google_analytics: UA-19036427-11
+repo: http://github.com/badalsurana/badalsurana.com
+disqus_shortname: "badalsurana"
+disqus_site_shortname: "badalsurana"
+
+# Author settings
+author:
+  name: Badal Surana
+  job: Web Developer
+  bio: ""
+  thumb: /images/author.jpg
+  email: badalsurana122@gmail.com
+  url: https://www.badalsurana.com/
+  github: https://github.com/badalsurana
+  twitter: https://twitter.com/badalsurana
+  facebook: https://facebook.com/noobdeveloper
+  linkedin: https://linkedin.com/in/badal-surana
+
+exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]
